@@ -7,7 +7,7 @@
 
 
 
-// setTimeout(function showPopup() {
+setTimeout(function showPopup() {
 	document.getElementById("card").style.display = "none";
 	document.getElementById("popup").style.display = "block";
 }, 1000);
