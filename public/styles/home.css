@@ -1,65 +1,71 @@
 body {
 	font-size: 20px;
 	justify-content: center;
-    align-items: center;
-    height: 90vh;
-    display: flex;
-    font-family: sans-serif;
-    background-color: lightgray;
-    position: relative;
+	align-items: center;
+	height: 90vh;
+	display: flex;
+	font-family: sans-serif;
+	background-color: lightgray;
+	position: relative;
 }
 
-
-.card h1{
-    color: red;
+.card h1 {
+	color: red;
 }
 
-.card{
-    
-    width: 300px;
-    background-color: white;
+.card {
+	width: 300px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px black;
+	text-align: center;
+}
+
+.card-home-img {
+	width: 100%;
+}
+
+a {
+	color: darkgreen;
+	text-decoration: none;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	padding-right: 5px;
+}
+
+footer {
+	font-size: 12px;
+	color: grey;
+}
+
+#popup {
+	display: none;
+	font-size: 48px;
+	text-align: center;
+	background-color: rgba(192, 192, 192, 0.8);
+	padding: 60px;
+	border-radius: 20px;
+	position: absolute;
+	height: 100vh;
+	width: 100vh;
+}
+
+.wrapper {
+	position: relative;
+	top: 40%;
+	background-color: white;
+	display: inline-block;
+	padding: 40px;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px black;
-    text-align: center;
 }
 
-.card-home-img{
-    width: 100%;
-}
-
-a{
-    color: darkgreen;
-    text-decoration: none;
-}
-
-.icon{
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
-}
-
-footer{
-    font-size: 12px;
-    color: grey;
-}
-
-#popup{
-    display: none;
-    font-size: 48px;
-    text-align: center;
-    background-color: white;
-    padding: 60px;
-    border-radius: 20px;
-    transition: 700ms ease-in-out;
-    position: absolute;
-    
-}
-
-.age-buttons{
-    font-size: 25px;
-    padding: 10px;
-    width: 250px;
-    margin: 0 30px;
-
+.age-buttons {
+	font-size: 25px;
+	padding: 10px;
+	width: 250px;
+	margin: 0 30px;
 }
