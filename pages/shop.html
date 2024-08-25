@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,64 @@
     <link rel="stylesheet" href="../public/styles/shop.css">
     <script type="text/javascript" src="../public/scripts/shop.js"></script>
 </head>
+
 <body>
+    <!-- Panel nawigacyjny -->
     <header>
-        <!-- Panel nawigacujny -->
-         <div>
-            <!-- Linki do podstron -->
-            <p><a href="../index.html"><img src="" alt="">Strona główna</a></p>
-        
+        <!-- Rozwijane menu z linkami do podstron -->
+        <div class="menu-conteiner">
+            <img id="main-menu" src="../public/images/menu-img.png" alt="">
+            <div class="menu-wrapper">
+                <ul class="menu"><a href="../index.html"><img class="icon" src="../public/images/home-icon.png"
+                            alt="">Strona główna</a></ul>
+                <ul class="menu"><a href="../pages/about.html"><img class="icon" src="../public/images/company-icon.png"
+                            alt="">O nas</a></ul>
+                <ul class="menu"><a href="../pages/login.html"><img class="icon" src="../public/images/login-icon.png"
+                            alt="">Logowanie</a></ul>
+                <ul class="menu"><a href="../pages/news.html"><img class="icon" src="../public/images/news-icon.png"
+                            alt="">Aktualności</a></ul>
+                <ul class="menu"><a href="../pages/faq.html"><img class="icon" src="../public/images/help-icon.png"
+                            alt="">FAQ</a></ul>
+                <ul class="menu"><a href="../pages/admin.html"><img class="icon" src="../public/images/gear-icon.png"
+                            alt="">Administracja</a></ul>
+            </div>
         </div>
-         <div>
-            <!-- Koszyk -->
-             <p>Koszyk</p>
-         </div>
+
+
+
+
+        <!-- Zdjęcie główne -->
+        <div class="header">
+
+            <div><img class="main-img" src="../public/images/shop-icon-big.png" alt=""></div>
+            <div>
+                <h1>SKLEP</h1>
+            </div>
+            <div><img class="main-img" src="../public/images/shop-icon-big.png" alt=""></div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Ikona koszyka -->
+        <div><img id="main-shop-card" src="../public/images/shopping-card.png" alt=""></div>
     </header>
     <main>
 
+        <!-- Popup -->
+        <div id="popup-wrapper">
+            <div id="popup">
+                <p>Czy masz 18lat?</p>
+                <button onclick="disablePopup()" class="popup-button">TAK</button>
+                <button onclick="goGoogle()" class="popup-button">NIE</button>
+            </div>
+        </div>
 
-
-
+        <!-- Lista produktów -->
+        <div id="product-card"></div>
 
 
 
@@ -38,5 +79,12 @@
 
 
     </main>
+
+
+
+    <footer>
+        <p onload="showPopup()">Wszelkie prawa zastrzeżone &copy;</p>
+    </footer>
 </body>
+
 </html>

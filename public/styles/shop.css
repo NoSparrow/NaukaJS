@@ -1,0 +1,156 @@
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: darkgreen ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#main-menu{
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+    transition: ease-in-out 0.5s;
+}
+
+#main-menu:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.menu-wrapper{
+    position: absolute;
+    display: none;
+    transition: ease-in-out 1s;
+    z-index: 100;
+}
+
+#main-menu:hover .menu{
+    display: block;
+}
+
+.menu-conteiner:hover .menu-wrapper{
+    display: block;
+}
+
+.main-img{
+    width: 75px;
+    height: 75px;
+}
+
+#main-shop-card{
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+    transition: ease-in-out 0.5s;
+}
+
+#main-shop-card:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.header{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+ 
+}
+h1{
+    color: red;
+    margin: 0 20px 0 20px;
+}
+
+#popup-wrapper{
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.9);
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+#popup{
+    font-size: 30px;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    padding: 20px 60px 20px 60px;
+    border-radius: 15px;
+    top: 10%;
+}
+
+.popup-button{
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    min-width: 100px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+}
+
+.menu{
+    border-top: solid 2px ;
+    padding: 5px;
+    margin: 0;
+    background-color: #F5F5F5;
+
+}
+
+.menu:hover{
+   background-color: #DEDEDE; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    margin-top: 30px;
+}
